@@ -94,13 +94,14 @@ nav ul{
 
 .comocontribuir{
     background-color: #ffff0044;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 70px 0;
     gap: 2rem;
     color: #133600;
+    
 
     & h3{
         font-size: 26px;
@@ -109,6 +110,7 @@ nav ul{
 
     & p{
         font-size: 19px;
+        margin-bottom: 40px;
     }
 }
 
@@ -117,8 +119,6 @@ nav ul{
     width: 100%;
     justify-content: space-around;
     align-items: stretch
-  
-
 }
 
 .card-contribuir{
@@ -141,5 +141,67 @@ nav ul{
 .card-contribuir p{
     font-size: 18px;
     margin: auto;
+}
+
+.card-contribuir i{
+    font-size: 35px;
+}
+
+.form-voluntario{
+    min-height: 60vh;
+    background-color: #A2FF70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    gap: 2rem;
+
+    & h3{
+        font-size: 26px;
+    }
+}
+
+form{
+    width: 30%;
+    text-align: left;
+    text-align: center;
+
+
+    & div{
+        width: 100%;
+        margin: 10px 0 20px 0;
+        box-shadow: -6px 8px 0px black;
+        border-radius: 10px;
+        border: 1px solid black;
+
+        & input{
+            width: 100%;
+            padding: 12px;
+            border: 0;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: 0;
+        }
+    }
+
+    & input[type=submit]{
+        background-color: #FF5F5F;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        transition: background-color 0.3s ease-in-out;
+
+    }
+
+    & input[type=submit]:hover{
+        background-color: #fa4747;
+    }
+
 }
 
