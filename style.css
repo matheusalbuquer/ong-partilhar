@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Zetta:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cor-destaque-nav{
+    color: #FF5F5F;
+}
+
+body{
+    font-family: "Lexend Zetta", sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+.header-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+
+    & img{
+        width: 220px;
+    }
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+    & li{
+        list-style: none;
+    }
+}
+
+.bt-header{
+    background-color: #FF5F5F;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+
+    & i{
+        margin-left: 15px;
+    }
+}
+
+.bt-header:hover{
+    background-color: #fa4747;
+}
+
+.inicio{
+    background-image: url(./imgs/capa-inicio.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.inicio-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 50px;
+}
+
+.bt-inicio{
+    display: flex;
+    gap: 5rem;
+    align-items: center ;
+    font-size: 15px;
+}
+
+.botao-inicio{
+    background-color: #FF5F5F;
+    padding: 12px;   
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.botao-inicio:hover{
+    background-color: #fa4747;
+}
+
+
+
+.servicosinicio-conteiner{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    gap: 3rem;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servicosinicio-texto{
+    width: 60%;
+    text-align: center;
+    
+    & h2{
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    & p{
+        color: #5a5a5a;
+    }
+}
+
+
+.tipos-servicosinicio{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    gap: 10rem;
+    justify-content: center;
+
+    & img{
+        width: 400px;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+.osservicos-inicio{
+    border: 1px solid #c7c6c6d3;
+    border-radius: 20px 20px 0 0;
+
+    & p{
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+}
+
+.osservicos-texto{
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+
+    & spam{
+        font-size: 12px;
+        color: #5a5a5a;
+    }
+
+  
+}
+
+
+.comoajudar{
+    height: 50vh;
+    background-image: url(./imgs/fundo-comoajudar.png);
+    display: flex;
+    justify-content: center;
+}
+
+.comoajudar-conteiner{
+    width: 100%;
+}
+
+.comoajudar-texto{
+    background-color: #fff;
+    font-family: "Aoboshi One", serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto ;
+    box-shadow: -7px 8px 0px black
+    
+}
+
+.faq-container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: -7px 8px 0px black;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.faq-item:focus {
+    outline: 3px solid #4A90E2;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 17px;
+    font-size: 16px;
+}
+
+.faq-toggle {
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item:focus,
+.faq-item *:focus {
+    outline: none;
+}
+
+.diretoria{
+    background-color: #f0f0f0;
+    font-family: "Aoboshi One", serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+
+    & h3{
+        font-size: 25px;
+    }
+}
+
+.diretoras{
+    display: flex;
+    gap: 17rem;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.clecia{
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -7px 8px 0px black;
+    border-radius: 15px;
+
+    & img{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+}
+
+.clecia-texto{
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+    line-height: 30px;
+
+    & p{
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    & span{
+        color: #5a5a5a;
+    }
+}
+
+.contato-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: #EEFFE4;
+
+    & h3{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+}
+
+.mapaeform{
+    display: flex;
+    gap: 3rem;
+}
+
+.mapa{
+    height: 500px;
+
+    & iframe{
+        height: 100%;
+    }
+}
+
+.formulario-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    
+
+    & h4{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    & p{
+        width: 70%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    font-family: "Aoboshi One", serif;
+    margin-top: 20px;
+
+  
+
+    & input{
+        border: 0;
+        width: 80%;
+        outline: 0;
+        padding: 12px;
+        cursor: pointer;
+        box-shadow: -6px 8px 0px black;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: auto;
+    }
+
+    & input[type="submit"]{
+        border: 0;
+        background-color: #FF5F5F;
+        color: #fff;
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        font-size: 20px;
+    }
+
+    .bt-enviarform-contato{
+        position: relative;
+        margin: auto;
+        width: 80%;
+
+        & i{
+            position: absolute;
+            font-size: 30px;         
+            right: 25%;
+            top: 25%;
+            cursor: pointer;
+        }
+
+    }
+
+    & textarea{
+        border: 0;
+        width: 80%;
+        outline: 0;
+        padding: 10px;
+        cursor: pointer;
+        box-shadow: -7px 8px 0px black;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: auto;
+    }
+}
+
+footer{
+    background-color: #A2FF70;
+
+}
+
+.footer-conteiner{
+    display: flex;
+    justify-content: space-around;
+    height: 40vh;
+    font-family: "Aoboshi One", serif;
+    padding: 25px;
+}
+
+.enderecos{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 250px;
+
+    & h3{
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    & p{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    & span{
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+}
+
+.suporte{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 250px;
+
+    & h3{
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    & p{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    & span{
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+}
+
+.redessociais{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    & a{
+        font-size: 40px;
+    }
+}
+
+.redes-s{
+    display: flex;
+    gap: 2rem;
+}
