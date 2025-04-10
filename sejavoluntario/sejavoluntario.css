@@ -106,19 +106,25 @@ nav ul{
     & h3{
         font-size: 26px;
         font-weight: 700;
+        text-align: center;
     }
 
     & p{
         font-size: 19px;
         margin-bottom: 40px;
+        max-width: 85%;
+        text-align: center;
     }
 }
 
 .contribuicoes{
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
     align-items: stretch
+    
 }
 
 .card-contribuir{
@@ -128,7 +134,7 @@ nav ul{
     text-align: center;
     padding: 50px;
     gap: 20px;
-    width: 20%;
+    max-width: 400px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
 }
@@ -204,4 +210,33 @@ form{
     }
 
 }
+
+@media (max-width: 1440px) and (max-height: 900px){
+    .header-conteiner{
+        font-size: 15px;
+        padding: 0 20px;
+
+    }
+
+    .bt-header{
+       max-width: 150px;
+
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .header-conteiner{
+        font-size: 13px;
+        padding: 0 25px;
+
+    }
+
+    .bt-header{
+        max-width: 120px;
+ 
+     }
+}
+
+
 

@@ -340,6 +340,7 @@ nav ul{
 .mapaeform{
     display: flex;
     gap: 3rem;
+    justify-content: space-around;
 }
 
 .mapa{
@@ -559,6 +560,47 @@ footer{
         height: 75vh;
         padding: 35px;
     }
+
+
+}
+
+@media (max-width: 1200px) {
+
+    .formulario-contato{
+        width: 60%;
+
+        & p{
+            width: 100%;
+        }
+
+    }
+
+    .mapaeform{
+        width: 100%;
+    }
+
+    form{
+       
+        & input{
+            width: 100%;
+        }
+
+        & textarea{
+            width: 100%;
+        }
+
+        &   input[type=submit]{
+            padding: 15px;
+            width: 100%;
+        }
+
+        
+    }
+
+    .bt-enviarform-contato{
+        width: 100%;
+    }
+    
 
 
 }
