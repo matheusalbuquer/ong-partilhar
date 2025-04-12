@@ -82,7 +82,7 @@ nav ul{
 
 .inicio-bazar{
     min-height: 75vh;
-    background-color: rgb(17, 32, 17);
+    background-color: rgb(11, 32, 11);
     position: relative;
     z-index: 1;
     text-align: center;
@@ -107,10 +107,11 @@ nav ul{
 }
 
 main{
-    background-color: #aff789;
+    background-color: #ffff0044;
     display: flex;
     justify-content: center;
     min-height: 80vh;
+    padding: 30px 0;
 }
 
 .conteiner-main-bazar{
@@ -164,4 +165,38 @@ main{
     }
 
 
+}
+
+.final-bazar{
+    min-height: 45vh;
+    background-color: #A2FF70;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.final-bazar-conteiner{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    gap: 50px;
+    line-height: 2.5;
+
+    & a{
+        cursor: pointer;
+        background-color: #FF5F5F;
+        padding: 10px;
+        margin-top: 10px;
+        width: 150px;
+        color: #fff;
+        border-radius: 15px;
+        transition: 0.3s ease-in-out;
+    }
+
+    & a:hover{
+        background-color: #fa4747;
+    }
 }
