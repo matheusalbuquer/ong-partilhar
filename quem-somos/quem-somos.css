@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Zetta:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cor-destaque-nav{
+    color: #FF5F5F;
+}
+
+body{
+    font-family: "Lexend Zetta", sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+
+    & img{
+        width: 220px;
+    }
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+    & li{
+        list-style: none;
+
+        font-size: 13px;
+
+        & a{
+            transition: 0.3s ease;
+        }
+
+        & a:hover{
+            border-bottom: 3px solid #FF5F5F;
+        }
+    }
+}
+
+.bt-header{
+    background-color: #FF5F5F;
+    padding: 10px;
+    width: 180px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 13px;
+    transition: background-color 0.3s ease-in-out;
+
+    & i{
+        margin-left: 15px;
+    }
+}
+
+.bt-header:hover{
+    background-color: #fa4747;
+}
+
+.quemsomos-inicio{
+    background-image: url(https://partilhar.org.br/wp-content/uploads/2017/06/capa-1-como-ajudar-2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-family: "Aoboshi One", serif;
+    color: #A2FF70;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.missao{
+    min-height: 40vh;
+    display: flex;
+    background-color: #ffffec;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    & .missao-texto{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        color: #24553a;
+        h3{
+            font-size: 35px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            margin-left: 10%;
+        }
+
+        & p{
+            font-weight: 600;
+        }
+
+    }
+
+    & .missao-img{
+        & img{
+            width: 400px;
+        }
+    }
+
+}
+.visao{
+    min-height: 40vh;
+    display: flex;
+    background-color: #effad7;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    & .visao-texto{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        color: #24553a;
+        h3{
+            font-size: 35px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: end;
+            margin-right: 10%;
+        }
+
+        & p{
+            font-weight: 600;
+        }
+
+    }
+
+    & .visao-img{
+        & img{
+            width: 350px;
+        }
+    }
+
+}
+
+.valores{
+    background-color: #A2FF70;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+
+    & .titulo-valores{
+        color: #24553a;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+}
+
+.valores-conteiner{
+    display: flex;
+    background-color: #A2FF70;
+    min-height: 45vh;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.valoresCard{
+    background-color: #fff;
+    width: 320px;
+    height: 300px;
+    padding: 25px;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #afafaf;
+
+    & h3{
+        margin-bottom: 25px;
+    }
+
+    & i{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.paraquem{
+    min-height: 40vh;
+    display: flex;
+    background-color: #effad7;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    & .paraquem-texto{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        color: #24553a;
+        h3{
+            font-size: 35px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            margin-left: 10%;
+        }
+
+        & p{
+            font-weight: 600;
+        }
+
+    }
+
+    & .paraquem-img{
+        & img{
+            width: 320px;
+        }
+    }
+
+}
+
