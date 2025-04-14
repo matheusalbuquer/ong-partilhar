@@ -5,6 +5,14 @@
     box-sizing: border-box;
     
 }
+:root {
+    --vermelho: #FF5F5F;
+    --verde-limao: #A2FF70;
+    --amarelo-claro: #FEFDC6;
+    --preto: #111;
+    --cinza: #666;
+    --branco: #fff;
+  }
 
 a{
     text-decoration: none;
@@ -80,3 +88,86 @@ nav ul{
 .bt-header:hover{
     background-color: #fa4747;
 }
+
+.servicos-inicio{
+    background-image: url(https://partilhar.org.br/wp-content/uploads/2017/06/capa-2-nosso-trabalho.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    color: #A2FF70; 
+
+
+}
+
+.servicos-saude{
+    background-color: #f6ffef;
+    
+    & h3{
+        font-size: 35px;
+        margin-bottom: 40px;
+        text-align: center;
+        padding: 20px;
+        color: #1f4932;
+    }
+}
+
+.saude-conteiner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.saudeCards{
+    width: 320px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    & p{
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    & span{
+        font-size: 13px;
+    }
+
+}
+
+.psico, .fonaudio, .pedagogia, .masso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    position: relative;
+    
+    
+    & .img-servicos{
+        width: 320px;
+        height: 300px;
+        border-radius: 15px 15px 0 0;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        margin-top: 20px
+    }
+
+    & .simbolo{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    }
+
+} 
