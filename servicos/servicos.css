@@ -104,7 +104,7 @@ nav ul{
 }
 
 .servicos-saude{
-    background-color: #f6ffef;
+    background: linear-gradient(0deg, rgba(255, 253, 189, 0.6) 0%, #A2FF70 80%);
     
     & h3{
         font-size: 35px;
@@ -126,11 +126,13 @@ nav ul{
 }
 
 .saudeCards{
-    width: 320px;
+    width: 300px;
     background-color: #fff;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 
     & p{
         font-weight: 600;
@@ -149,25 +151,100 @@ nav ul{
     align-items: center;
     width: 450px;
     position: relative;
+    font-family: "Poppins", sans-serif;
     
     
     & .img-servicos{
-        width: 320px;
-        height: 300px;
+        width: 300px;
+        height: 280px;
+        border: 2px solid #ffffff;
+        border-bottom: 0;
         border-radius: 15px 15px 0 0;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         margin-top: 20px
+        
     }
+
+
 
     & .simbolo{
         width: 70px;
         height: 70px;
         position: absolute;
         top: 30px;
-        left: 30px;
+        left: 40px;
         background-color: #ffffff;
         border-radius: 50%;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     }
 
 } 
+
+.oficinas-conteiner{
+    width: 100%;
+    min-height: 40vh;
+    text-align: center;
+    padding: 50px;
+    
+
+    & h3{
+        font-size: 28px;
+        margin-bottom: 50px;
+        color: #1f4932;
+    }
+}
+
+.cursos-conteiner{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cursos{
+    border-radius: 10px;
+    width: 350px;
+    padding: 30px;
+    background-color: #ffe60077;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    & p{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    & span{
+        font-size: 14px;
+    }
+}
+
+.cuidandocaminhos{
+    background: linear-gradient(to right, #A2FF70, #FEFDC6);
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+    & h3{
+        text-align: left;
+        margin: 0 auto;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    & p{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 18px;
+        color: #666;
+    }
+}
