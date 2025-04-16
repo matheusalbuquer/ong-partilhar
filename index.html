@@ -261,17 +261,19 @@
                         Preencha o formulário abaixo e em breve entraremos em contato.
                     </p>
     
-                    <form action="">
+                    <form action="post" id="form">
     
-                        <input type="text" placeholder="Nome completo" name="nomeCompleto"required>
-                        <input type="email" placeholder="Email" name="email" required>
-                        <input type="text" placeholder="Assunto" name="Assunto" required>
-                        <textarea name="descricao" id="" placeholder="Descrição"></textarea>
+                        <input type="text" placeholder="Nome completo" id="nome" name="nomeCompleto"required>
+                        <input type="email" placeholder="Email" id="email" name="email" required>
+                        <input type="text" placeholder="Assunto" id="assunto" name="Assunto" required>
+                        <textarea name="descricao" id="descricao" placeholder="Descrição"></textarea>
                         <div class="bt-enviarform-contato">
                             <input type="submit" ><i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>
                         </div>
                         
                     </form>
+                    <p id="resultado" style="margin-top: 10px;"></p>
+
                 </div>
             </div>
 
@@ -353,7 +355,7 @@
 
 
 
-
+    <script src="form.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

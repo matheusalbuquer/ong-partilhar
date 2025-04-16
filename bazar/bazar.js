@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${produtosLista.imagem}" alt="${produtosLista.nome}">
                 <p>${produtosLista.nome}</p>
                 <span>R$ ${produtosLista.preco},00</span>
-                 <a href="">
+                 <a href="" id="enviar">
                     Quero esta peça
                 </a>
             `
