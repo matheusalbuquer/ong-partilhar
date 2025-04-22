@@ -24,6 +24,7 @@ header{
     position: fixed;
     z-index: 9999;
     background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header-conteiner{
@@ -31,28 +32,33 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 10px;
+}
 
-    & img{
-        width: 220px;
-    }
+.header-conteiner img{
+    width: 220px;
+}
+
+.header-conteiner #menu{
+    display: none;
 }
 
 nav ul{
     display: flex;
     gap: 3rem;
-    & li{
-        list-style: none;
+    align-items: center;
+}
 
-        font-size: 13px;
+nav ul li{
+    list-style: none;
+    font-size: 13px;
+}
 
-        & a{
-            transition: 0.3s ease;
-        }
+nav ul li a{
+    transition: 0.3s ease;
+}
 
-        & a:hover{
-            border-bottom: 3px solid #FF5F5F;
-        }
-    }
+nav ul li a:hover{
+    border-bottom: 3px solid #FF5F5F;
 }
 
 .bt-header{
@@ -66,10 +72,10 @@ nav ul{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 13px;
     transition: background-color 0.3s ease-in-out;
+}
 
-    & i{
-        margin-left: 15px;
-    }
+.bt-header i{
+    margin-left: 15px;
 }
 
 .bt-header:hover{
@@ -255,4 +261,54 @@ form{
 }
 
 
+@media (max-width: 1000px) {
 
+    .header-conteiner{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+    .header-conteiner #menu{
+        display: block;
+        font-size: 25px;
+    }
+
+    #nav {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        height: 92vh;
+        right: 0;
+        top: 100%;
+        background-color: #fff;
+        padding: 30px 15px;
+        z-index: 1000;
+        overflow-y: auto;
+        opacity: 1; /* sempre visível enquanto transita */
+    }
+    
+    #nav.ativo {
+        transform: translateX(0);
+    }
+
+
+    #nav ul{
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .inicio-sejav h1{
+        font-size: 45px;
+    }
+
+    .contribuicoes{
+        gap: 80px;
+    }
+    .form-voluntario{
+        width: 100%;
+        text-align: center;
+    }
+    form{
+        width: 100%;
+    }
+}

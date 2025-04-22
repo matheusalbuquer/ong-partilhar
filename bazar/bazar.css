@@ -246,4 +246,16 @@ main{
     .conteiner-main-bazar{
         width: 90%;
     }
+
+
+
+    .final-bazar p{
+        font-size: 14px;
+    }
+
+    .final-bazar-conteiner{
+        width: 100%;
+    }
+
+
 }

@@ -340,8 +340,7 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 70vh;
+    min-height: 75vh;
     background-color: #EEFFE4;
     padding: 	50px;
 
@@ -470,47 +469,48 @@ footer{
     flex-direction: column;
     gap: 12px;
     width: 250px;
-
-    & h3{
-        margin-bottom: 18px;
-        font-weight: bold;
-        font-size: 25px;
-    }
-
-    & p{
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    & span{
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
 }
+
+.enderecos h3{
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.enderecos p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.enderecos span{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
 
 .suporte{
     display: flex;
     flex-direction: column;
     gap: 12px;
     width: 250px;
+}
 
-    & h3{
-        margin-bottom: 18px;
-        font-weight: bold;
-        font-size: 25px;
-    }
+.suporte h3{
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 25px;
+}
 
-    & p{
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
+.suporte p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-    & span{
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
+.suporte span{
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .redessociais{
@@ -518,9 +518,11 @@ footer{
     gap: 1rem;
     flex-direction: column;
     align-items: center;
-    & a{
-        font-size: 40px;
-    }
+
+}
+
+.redessociais a{
+    font-size: 40px;
 }
 
 .redes-s{
@@ -619,8 +621,8 @@ footer{
 
 
     .contato-conteiner{
-        height: 75vh;
-        padding: 35px;
+        min-height: 85vh;
+        padding: 0 35px;
     }
 
 
@@ -713,10 +715,7 @@ footer{
             border-radius: 15px;
         }
     }
-
-    .contato-conteiner{
-        min-height: 90vh;
-    }    
+ 
 
     .formulario-contato{
         text-align: center;
@@ -753,6 +752,52 @@ footer{
     .bt-inicio a{
         width: 100%;
         font-size: 17px;
+    }
+
+    .contato-conteiner{
+       padding: 25px;
+    }
+
+    .formulario-contato p{
+        width: 100%;
+    }
+
+    form input{
+        width: 100%;
+    }
+
+    form textarea{
+        width: 100%;
+    }
+
+    .enderecos{
+        width: 200px;
+    }
+
+    .enderecos h3{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .enderecos span{
+        font-size: 13px;
+    }
+
+
+    .suporte h3{
+        font-size: 15px;
+    }
+
+    .suporte span{
+        font-size: 13px;
+    }
+
+    .redessociais h3{
+        font-size: 15px;
+    }
+
+    .redes-s a{
+        font-size: 30px;
     }
 
 }
