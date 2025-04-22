@@ -1,74 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Zetta:wght@100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
-:root {
-    --vermelho: #FF5F5F;
-    --verde-limao: #A2FF70;
-    --amarelo-claro: #FEFDC6;
-    --preto: #111;
-    --cinza: #666;
-    --branco: #fff;
-  }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.cor-destaque-nav{
+.cor-destaque-nav {
     color: #FF5F5F;
 }
 
-body{
+body {
     font-family: "Lexend Zetta", sans-serif;
+    
 }
 
-header{
+header {
     width: 100%;
     position: fixed;
     z-index: 9999;
     background-color: #fff;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.header-conteiner{
+.header-conteiner {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
-
-    & img{
-        width: 220px;
-    }
+    padding: 10px ;
 }
 
-nav ul{
+.header-conteiner img {
+    width: 220px;
+}
+
+.header-conteiner #menu {
+    display: none;
+}
+
+nav ul {
     display: flex;
     gap: 3rem;
-    & li{
-        list-style: none;
-        
-        font-size: 13px;
-
-        & a{
-            transition: 0.3s ease;
-        }
-
-        & a:hover{
-            border-bottom: 3px solid #FF5F5F;
-        }
-
-    }
-
-  
-
+    align-items: center;
 }
 
-.bt-header{
+nav ul li {
+    list-style: none;
+    font-size: 13px;
+}
+
+nav ul li a {
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #FF5F5F;
+}
+
+.bt-header {
     background-color: #FF5F5F;
     padding: 10px;
     width: 180px;
@@ -79,17 +73,17 @@ nav ul{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     font-size: 13px;
     transition: background-color 0.3s ease-in-out;
-
-    & i{
-        margin-left: 15px;
-    }
 }
 
-.bt-header:hover{
+.bt-header i {
+    margin-left: 15px;
+}
+
+.bt-header:hover {
     background-color: #fa4747;
 }
 
-.servicos-inicio{
+.servicos-inicio {
     background-image: url(https://partilhar.org.br/wp-content/uploads/2017/06/capa-2-nosso-trabalho.jpg);
     background-position: center;
     background-size: cover;
@@ -98,103 +92,100 @@ nav ul{
     justify-content: center;
     align-items: center;
     font-size: 55px;
-    color: #A2FF70; 
-
-
+    color: #A2FF70;
 }
 
-.servicos-saude{
+.servicos-saude {
     background: linear-gradient(0deg, rgba(255, 253, 189, 0.6) 0%, #A2FF70 80%);
-    
-    & h3{
-        font-size: 35px;
-        margin-bottom: 40px;
-        text-align: center;
-        padding: 20px;
-        color: #1f4932;
-    }
 }
 
-.saude-conteiner{
+.servicos-saude h3 {
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    color: #1f4932;
+}
+
+.saude-conteiner {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
     padding: 30px;
     flex-wrap: wrap;
-    
 }
 
-.saudeCards{
+.saudeCards {
     width: 300px;
     background-color: #fff;
     padding: 12px;
     text-align: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
-    & p{
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    & span{
-        font-size: 13px;
-    }
-
 }
 
-.psico, .fonaudio, .pedagogia, .masso{
+.saudeCards p {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.saudeCards span {
+    font-size: 13px;
+}
+
+.psico,
+.fonaudio,
+.pedagogia,
+.masso {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 450px;
     position: relative;
     font-family: "Poppins", sans-serif;
-    
-    
-    & .img-servicos{
-        width: 300px;
-        height: 280px;
-        border: 2px solid #ffffff;
-        border-bottom: 0;
-        border-radius: 15px 15px 0 0;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        margin-top: 20px
-        
-    }
+}
 
+.psico .img-servicos,
+.fonaudio .img-servicos,
+.pedagogia .img-servicos,
+.masso .img-servicos {
+    width: 300px;
+    height: 280px;
+    border: 2px solid #ffffff;
+    border-bottom: 0;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
 
+.simbolo {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
 
-    & .simbolo{
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        top: 30px;
-        left: 40px;
-        background-color: #ffffff;
-        border-radius: 50%;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-    }
-
-} 
-
-.oficinas-conteiner{
+.oficinas-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     min-height: 40vh;
     text-align: center;
     padding: 50px;
-    
-
-    & h3{
-        font-size: 28px;
-        margin-bottom: 50px;
-        color: #1f4932;
-    }
 }
 
-.cursos-conteiner{
+.oficinas-conteiner h3 {
+    font-size: 28px;
+    margin-bottom: 50px;
+    color: #1f4932;
+}
+
+.cursos-conteiner {
     display: flex;
     align-items: center;
     gap: 25px;
@@ -202,7 +193,7 @@ nav ul{
     flex-wrap: wrap;
 }
 
-.cursos{
+.cursos {
     border-radius: 10px;
     width: 350px;
     padding: 30px;
@@ -210,41 +201,134 @@ nav ul{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
-    }
-    
-    & p{
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 15px;
-    }
-
-    & span{
-        font-size: 14px;
-    }
 }
 
-.cuidandocaminhos{
+.cursos:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cursos p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cursos span {
+    font-size: 14px;
+}
+
+.cuidandocaminhos {
     background: linear-gradient(to right, #A2FF70, #FEFDC6);
     min-height: 40vh;
     display: flex;
     flex-direction: column;
     padding: 50px;
+}
 
-    & h3{
-        text-align: left;
-        margin: 0 auto;
-        font-size: 30px;
-        margin-bottom: 30px;
+.cuidandocaminhos h3 {
+    text-align: left;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.cuidandocaminhos p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #666;
+}
+
+@media (max-width: 1000px) {
+
+    .header-conteiner{
+        justify-content: space-between;
+        padding: 10px 30px;
     }
 
-    & p{
+    .header-conteiner #menu {
+        display: block;
+        font-size: 25px;
+    }
+
+    #nav {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        height: 92vh;
+        right: 0;
+        top: 100%;
+        background-color: #fff;
+        padding: 30px 15px;
+        z-index: 1000;
+        overflow-y: auto;
+        opacity: 1;
+    }
+
+    #nav.ativo {
+        transform: translateX(0);
+    }
+
+    #nav ul {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+ 
+    
+    .servicos-inicio{
+        font-size: 40px;
+    }
+
+    .servicos-saude{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .servicos-saude h3{
+        font-size: 35px;
+    }
+
+    .psico,
+    .fonaudio,
+    .pedagogia,
+    .masso {
+        width: 350px;
+    }
+
+    .simbolo {
+        left: 0;
+    }
+
+    .oficinas{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .oficinas-conteiner h3 {
+        font-size: 18px;
+        margin-bottom: 50px;
+        color: #1f4932;
+    }
+
+    .cuidandocaminhos h3 {
         text-align: center;
         margin: 0 auto;
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .cuidandocaminhos p {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 15px;
         color: #666;
     }
+
+
 }

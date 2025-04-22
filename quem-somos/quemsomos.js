@@ -1,9 +1,3 @@
-document.querySelectorAll('.faq-item').forEach(item => {
-    item.addEventListener('click', () => {
-        item.classList.toggle('active');
-    });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('#menu');
     const nav = document.querySelector('#nav');
