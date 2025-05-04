@@ -293,12 +293,15 @@ nav ul li a:hover{
     }
 }
 
-.diretoras{
+.diretoras {
     display: flex;
-    gap: 17rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* reduzido para não quebrar os cards */
     padding: 10px;
     margin-top: 20px;
 }
+
 
 .clecia{
     width: 230px;
